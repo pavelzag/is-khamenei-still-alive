@@ -119,3 +119,43 @@ body.is-dead .ribbon {
     font-family: monospace;
     letter-spacing: 1px;
 }
+
+.dates-panel {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    opacity: 0;
+    transition: opacity 2.5s ease;
+    color: #888;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+}
+
+body.is-dead .dates-panel {
+    opacity: 1;
+}
+
+.dates-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.dates-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #555;
+}
+
+.dates-value {
+    font-family: monospace;
+    color: #aaa;
+}
+
+.dates-divider {
+    font-size: 1.2rem;
+    color: #444;
+}
